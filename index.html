@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class=" jumbotron-fluid bg-dark text-white text-center">
+            <div class="container">
+                <h1 class="display-4 ">Day Weather Dashboard</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 m-2 bg-light">
+                <h3>City:</h3>
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="city-input" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button id="add-city" class="btn btn-outline-primary" type="button">
+                            <ion-icon name="search-outline"></ion-icon>
+                            Search
+                        </button>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem;">
+                    <ul id="city-list" class="list-group list-group-flush">
+                    </ul>
+                </div>
+            </div>
+            <div class="col-8 m-2">
+                <div class="row-12">
+                    <div class="card">
+                        <div id="today-weather" class="card-body">
+
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row-12">
+                    <h3>5-Day Forecast:</h3>
+                </div>
+                <br>
+                <div id="boxes" class="d-flex flex-wrap" class="row">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
